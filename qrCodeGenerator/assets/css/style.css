@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace, "Courier New", "Lucida Console";
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(39,98,125);
+    background: linear-gradient(90deg, rgba(39,98,125,1) 0%, rgba(9,100,121,1) 14%, rgba(0,212,255,1) 100%);}
+
+h2 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    padding: 5px;
+    width: 220px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    outline: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
