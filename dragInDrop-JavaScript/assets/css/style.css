@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace, "Courier New", "Lucida Console";
+    font-size: 30px;
+}
+
+body {
+    background-color: #6F73D2
+}
+
+.kanban {
+    display: flex;
+    justify-content: center;
+    min-height: 400px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: #4464AD;
+    min-width: 200px;
+    border-radius: 5px;
+}
+
+.item {
+    background-color: #A4B0F5;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 3px black;
+    text-align: init;
+}
+
+.dragging {
+    opacity: 0.5;
+}
