@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Flutuante</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="menuContent">
+        <div class="item floatingItem" style="background-color: #0081CF; z-index: 1; rotate: 45deg;">
+            <i class="bx bx-x"></i>
+        </div>
+        <div class="options">
+            <div class="item" style="background-color: #008e9b;">
+                <i class="bx bx-pencil"></i>
+            </div>
+
+            <div class="item" style="background-color: #ffc75f;">
+                <i class="bx bx-cog"></i>
+            </div>
+
+            <div class="item" style="background-color: #d65db1;">
+                <i class="bx bx-printer"></i>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menu = document.querySelector(".floatingItem")
+        menu.onclick = () => menu.classList.toggle("active")
+    </script>
+</body>
+</html>
