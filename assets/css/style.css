@@ -21,7 +21,6 @@ ul {
     list-style-type: none;
     padding: 50px;
     font-size: 20px;
-    color: white;
 }
 
 li {
@@ -30,6 +29,7 @@ li {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 a:visited {
