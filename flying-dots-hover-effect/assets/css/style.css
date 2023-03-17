@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(39,98,125,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.dots {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.dots span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(36deg * var(--i)));
+}
+
+.dots span::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border: 3px solid white;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 0       0       5px     white,
+                -10px   -10px   0       white,
+                -10px   -10px   5px     white,
+                10px    10px    0       white,
+                10px    10px    5px     white,
+                10px    -10px   0       white,
+                10px    -10px   5px     white,
+                -10px   10px    0       white,
+                -10px   10px    5px     white;
+
+                transform-origin: 5px;
+                animation: animateDots 5s linear infinite;
+                animation-delay: calc(-0.25s * var(--i));
+                transition: 2s;
+}
+
+.dots:hover span::before {
+    transform-origin: 50px;
+    box-shadow: 0       0       10px    white,
+                -100px  -100px  0       white,
+                -100px  -100px  10px    white,
+                100px   100px   0       white,
+                100px   100px   10px    white,
+                100px   -100px  0px     white,
+                100px   -100px  10px    white,
+                -100px  100px   0px     white,
+                -100px  100px   10px    white;
+}
+
+@keyframes animateDots {
+    0% {
+        transform: rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
