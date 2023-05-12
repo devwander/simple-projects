@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Editor</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div>
+                <button class="btnResetFilters">Clear Filters</button>
+            </div>
+
+            <div>
+                <button class="newImg">New Image</button>
+                <button class="btnSave">Save</button>
+            </div>
+        </header>
+
+        <div class="imgContent">
+            <input type="file"accept="image/*" class="inputImage">
+            <img src="./assets/imgs/noimage.jpg" alt="no image" >
+        </div>
+
+        <footer>
+            <div class="rotateContent">
+                <button onclick="handleDirection('rotateRight')"><i class="bx bx-rotate-right"></i></button>
+                <button onclick="handleDirection('rotateLeft')"><i class="bx bx-rotate-left"></i></button>
+                <button onclick="handleDirection('reflectY')"><i class="bx bx-reflect-vertical"></i></button>
+                <button onclick="handleDirection('reflectX')"><i class="bx bx-reflect-horizontal"></i></button>
+            </div>
+
+            <span id="spnRangeValue"></span>
+
+            <input type="range" class="range">
+
+            <div class="filtersContent">
+                <button id="filterDefault" class="active">Glow</button>
+                <button>Contrast</button>
+                <button>Saturation</button>
+                <button>Gray</button>
+                <button>Inversion</button>
+            </div>
+        </footer>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
