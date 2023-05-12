@@ -1,5 +1,25 @@
 const items = document.querySelectorAll(".item")
 
-items.forEach((item) => {
-    item.innerText = `<${item.innerText}/>`
+const emojis = [
+    "⏰",
+    "🌤️",
+    "🎯",
+    "📜",
+    "🕹️",
+    "🎨",
+    "📄",
+    "🎠",
+    "🎵",
+    "🔐",
+    "📷",
+    "📲",
+    "📝",
+    "🔎",
+    "📧",
+    "🎼",
+    "🏷️"
+  ]
+
+items.forEach((item, i) => {
+    item.innerText = `${emojis[i]} <${item.innerText}/>`
 })
