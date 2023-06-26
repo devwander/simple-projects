@@ -3,6 +3,7 @@ const items = document.querySelectorAll(".item")
 const emojis = [
     "⏰",
     "🌤️",
+    "📊",
     "🎯",
     "📜",
     "🕹️",
