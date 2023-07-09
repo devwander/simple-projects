@@ -45,3 +45,18 @@ a {
 a:visited {
     color: white;
 }
+
+button {
+    padding: 0.5rem;
+    border: 1px solid #333;
+    background-color: #dbe4ee;
+    border-radius: 5px;
+    color: #3066be;
+    font-weight: 800;
+    transition: 200ms ease;
+}
+
+button:hover {
+    color: #fff;
+    background-color:  #3066be;
+}
